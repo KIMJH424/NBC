@@ -21,18 +21,18 @@ int main() {
 	int arr[5];
 	int select;
 
-	cout << "5°³ÀÇ ¼ýÀÚ¸¦ ÀÔ·ÂÇÏ½Ã¿À :";
+	cout << "5ê°œì˜ ìˆ«ìžë¥¼ ìž…ë ¥í•˜ì‹œì˜¤ :";
 	for (int i = 0; i < 5; i++) {
 		cin >> arr[i];
 	}
 
 	do {
-		cout << "¿øÇÏ´Â Á¤·Ä ¹æ½ÄÀ» ¼±ÅÃÇÏ½Ã¿À(1:¿À¸§Â÷¼ø,2:³»¸²Â÷¼ø :";
+		cout << "ì›í•˜ëŠ” ì •ë ¬ ë°©ì‹ì„ ì„ íƒí•˜ì‹œì˜¤(1:ì˜¤ë¦„ì°¨ìˆœ,2:ë‚´ë¦¼ì°¨ìˆœ :";
 		cin >> select;
 
 		if (select == 1) {
 			bubSort(arr, 5, true);
-			cout << "¿À¸§Â÷¼ø Á¤·Ä :";
+			cout << "ì˜¤ë¦„ì°¨ìˆœ ì •ë ¬ :";
 			for (int i = 0; i < 5;i++) {
 				cout << arr[i] << " ";
 			}
@@ -40,7 +40,7 @@ int main() {
 		}
 		else if (select == 2) {
 			bubSort(arr, 5, false); {
-				cout << "³»¸²Â÷¼ø Á¤·Ä :";
+				cout << "ë‚´ë¦¼ì°¨ìˆœ ì •ë ¬ :";
 				for (int i = 0;i < 5;i++) {
 					cout << arr[i] << " ";
 				}
@@ -48,7 +48,7 @@ int main() {
 			}
 		}
 		else {
-			cout << "1 ¶Ç´Â 2¸¸ ÀÔ·ÂÇØÁÖ¼¼¿ä." << endl;
+			cout << "1 ë˜ëŠ” 2ë§Œ ìž…ë ¥í•´ì£¼ì„¸ìš”." << endl;
 		}
 	}
 	while (select != 1 && select != 2);
