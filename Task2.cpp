@@ -63,9 +63,6 @@ public :
 	void addAnimal(Animal* animal) {
 		if (animalCount < 10) {
 			animals[animalCount++] = animal;
-		else{	
-			cout << "Zoo is full!" << endl;
-		}
 		}
 	}
 
