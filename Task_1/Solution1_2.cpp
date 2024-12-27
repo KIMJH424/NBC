@@ -7,8 +7,8 @@ void bubSortAscending(int arr[], int n) {
         bool swapped = false;
         for (int j = 0; j < n - 1 - i; j++) {
             if (arr[j] > arr[j + 1]) {
-                // swap을 대신하여 직접 교환
-                int temp = arr[j];
+              
+               int temp = arr[j];
                 arr[j] = arr[j + 1];
                 arr[j + 1] = temp;
                 swapped = true;
@@ -25,7 +25,7 @@ void bubSortDescending(int arr[], int n) {
         bool swapped = false;
         for (int j = 0; j < n - 1 - i; j++) {
             if (arr[j] < arr[j + 1]) {
-                // swap을 대신하여 직접 교환
+               
                 int temp = arr[j];
                 arr[j] = arr[j + 1];
                 arr[j + 1] = temp;
@@ -52,8 +52,7 @@ int main() {
         cin >> select;
 
         if (select == 1) {
-            // 오름차순 정렬
-            bubSortAscending(arr, 5);
+           bubSortAscending(arr, 5);
             cout << "오름차순 정렬 : ";
             for (int i = 0; i < 5; i++) {
                 cout << arr[i] << " ";
@@ -61,8 +60,7 @@ int main() {
             cout << endl;
         }
         else if (select == 2) {
-            // 내림차순 정렬
-            bubSortDescending(arr, 5);
+         bubSortDescending(arr, 5);
             cout << "내림차순 정렬 : ";
             for (int i = 0; i < 5; i++) {
                 cout << arr[i] << " ";
